@@ -1,0 +1,536 @@
+body {
+  margin: 0;
+}
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+
+  padding-top: 38px;
+  height: 825px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 58px;
+  margin-left: 58px;
+  align-items: center;
+}
+.navbar-user {
+  margin-left: 33px;
+}
+.navbar main {
+  display: flex;
+  align-items: center;
+}
+.navbar input {
+  width: 270px;
+  background: none;
+  border: none;
+  outline: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-left: 12px;
+}
+.navbar-icon-search {
+  width: 20px;
+  height: 20px;
+}
+.title {
+  margin-left: 71px;
+  margin-top: 47px;
+  margin-bottom: 41px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  align-items: center;
+}
+.title h1 {
+  margin: 0;
+}
+
+.title-color {
+  color: #f3477a;
+}
+.contents {
+  display: flex;
+}
+.add-task {
+  background-color: #884cb2;
+  height: 100%;
+  padding: 8px 30px 8px 30px;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 9px;
+  margin-left: 23px;
+}
+.add-task img {
+  margin-right: 5px;
+}
+.on-hold {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 83px;
+  margin-bottom: 28px;
+}
+.task {
+  display: flex;
+  align-items: center;
+
+  margin-left: 83px;
+}
+.task p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.task img {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+.task-state-Pending {
+  background: rgba(242, 153, 74, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 17px 1px 17px;
+  margin-right: 87px;
+}
+.task-state-Pending p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #f2994a;
+  margin: 0;
+}
+.task-state-cancelled {
+  background: rgba(235, 87, 87, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 17px 1px 17px;
+  margin-right: 79.85px;
+}
+.task-state-cancelled p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #eb5757;
+  margin: 0;
+}
+.task-state-completed {
+  background: rgba(39, 174, 96, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 17px 1px 17px;
+  margin-right: 72.7px;
+}
+.task-state-completed p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #27ae60;
+  margin: 0;
+}
+.task-state-InPending {
+  background: rgba(86, 204, 242, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 10px 1px 10px;
+  margin-right: 87px;
+}
+.task-state-InPending p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #56ccf2;
+  margin: 0;
+}
+.inactive {
+  background: rgba(235, 87, 87, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 10px 1px 10px;
+  margin-right: 87px;
+  margin-top: 54px;
+  height: 14px;
+}
+.inactive p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #eb5757;
+  margin: 0;
+}
+section .users {
+  width: 86.37px;
+  height: 24px;
+  margin-left: 59px;
+}
+section .users1 {
+  width: 86.37px;
+  height: 24px;
+  margin-left: 59px;
+}
+section .users2 {
+  width: 86.37px;
+  height: 24px;
+  margin-left: 59px;
+}
+section .users3 {
+  width: 24px;
+  height: 24px;
+  margin-left: 59px;
+  margin-right: 70px;
+}
+
+.task-flex {
+  display: flex;
+  align-items: center;
+}
+address .task-img {
+  width: 22px;
+  height: 22px;
+  margin-left: 75px;
+}
+.task-type {
+  width: 358px;
+  margin-right: 40px;
+}
+.line {
+  margin-left: 83px;
+  opacity: 0.5;
+  color: #e0e0e0;
+}
+.completed {
+  margin-top: 46px;
+  margin-right: 10px;
+}
+.secundary {
+  opacity: 0.5;
+}
+.completed-flex {
+  display: flex;
+}
+.minor {
+  margin-right: 11.5px;
+}
+.critical {
+  margin-right: 3.8px;
+}
+.tasks {
+  margin-bottom: 108px;
+}
+.face {
+  display: flex;
+}
+.face p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #555555;
+  margin: 0;
+  margin-left: 25px;
+}
+.time {
+  color: #f3477a;
+}
+.face img {
+  width: 38px;
+  height: 38px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #7d859a;
+  margin: 0;
+}
+.profile .profile-name {
+  margin: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #24272c;
+  margin: 0 7px 5px 25px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+.news {
+  margin: 55px 40px 95px 40px;
+}
+.sistym-alert {
+  background: linear-gradient(90deg, #dae4f4 0%, #d3dcf1 100%);
+  border-radius: 10px;
+  margin-top: 34px;
+  margin-bottom: 29px;
+  padding: 18px 13px 18px 13px;
+}
+.sistym-alert p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #555555;
+  margin: 0;
+  margin-top: 8px;
+}
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.square p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #7d859a;
+  margin: 0;
+}
+.square .send {
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #5787a4;
+}
+.square div {
+  display: flex;
+  align-items: center;
+}
+.sistym-message p.please {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+.flow {
+  color: #884cb2;
+}
+.ui {
+  color: #f7bd40;
+}
+.img {
+  display: flex;
+  justify-content: end;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+.img span {
+  margin: 0 15px 0 0;
+}
+.img-zip {
+  width: 178px;
+  height: 60px;
+}
+.guide {
+  display: none;
+}
+.add-task.button-on {
+  display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background: linear-gradient(115.67deg, #edc1d3 7.14%, #91bdec 99.42%);
+    margin: 55px 63px;
+  }
+  .container {
+    box-shadow: 0px 4px 40px #8ca4d8;
+    border-radius: 30px;
+  }
+  .contents {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .contents {
+    display: block;
+  }
+  .line {
+    width: 900px;
+  }
+  .img {
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .title {
+    font-size: 24px;
+  }
+  .task-img {
+    display: none;
+  }
+  .users,
+  .users1,
+  .users2,
+  .users3 {
+    display: none;
+  }
+  .line {
+    width: 660px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .minor,
+  .critical,
+  .normal {
+    display: none;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .line {
+    width: 460px;
+  }
+  .task-state-Pending p,
+  .task-state-InPending p,
+  .task-state-completed p,
+  .task-state-cancelled p {
+    display: none;
+    height: 10px;
+  }
+  .task-state-Pending,
+  .task-state-InPending,
+  .task-state-completed,
+  .task-state-cancelled {
+    height: 10px;
+    width: 10px;
+    padding: 0;
+    opacity: none;
+    margin-right: 20px;
+  }
+  .news {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .guide {
+    margin-left: 40px;
+    padding-bottom: 50px;
+    display: flex;
+  }
+  .guide div {
+    margin-right: 40px;
+    width: 150px;
+  }
+  .task-state-Pending.on,
+  .task-state-InPending.on {
+    margin-bottom: 13px;
+  }
+  .task-state-Pending.on p,
+  .task-state-InPending.on p,
+  .task-state-cancelled.on p {
+    display: block;
+    margin-left: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .guide p {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contets main {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .add-task {
+    display: none;
+  }
+  .add-task.button-on {
+    display: block;
+  }
+  .task-type {
+    width: 250px;
+  }
+  .line {
+    width: 350px;
+  }
+  h1 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .navbar-user {
+    margin-left: 10px;
+  }
+  .on-hold {
+    margin-left: 0;
+  }
+  .task {
+    margin-left: 0;
+  }
+  .line {
+    margin-left: 0;
+  }
+  .title {
+    margin-left: 0;
+  }
+  .navbar-alert {
+    display: none ;
+  }
+
+  .contents main {
+    width: 80vw;
+    margin: auto;
+  }
+}
