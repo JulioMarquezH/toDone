@@ -1,0 +1,117 @@
+.point {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+.task-type {
+  width: 358px;
+}
+.users {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.minor {
+  margin-left: 5px;
+}
+.task-p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.task-state-Pending {
+  background: rgba(242, 153, 74, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 17px 1px 17px;
+  margin-right: 50px;
+}
+.task-state-Pending p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #f2994a;
+  margin: 0;
+  font-family: "Montserrat";
+}
+.task-flex {
+  display: flex;
+  align-items: center;
+}
+.line {
+  margin-left: 83px;
+  opacity: 0.5;
+  color: #e0e0e0;
+}
+.task {
+  display: flex;
+  align-items: center;
+  margin-left: 83px;
+  justify-content: space-between;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.isNotNone {
+  display: flex;
+}
+.isNone {
+  display: none;
+}
+.task-state-InPending {
+  background: rgba(86, 204, 242, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 10px 1px 10px;
+  margin-right: 50px;
+}
+.task-state-InPending p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #56ccf2;
+  margin: 0;
+  font-family: "Montserrat";
+}
+.task-state-completed p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #27ae60;
+  margin: 0;
+  font-family: "Montserrat";
+}
+.task-state-completed {
+  background: rgba(39, 174, 96, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 17px 1px 17px;
+  margin-right: 50px;
+}
+.task-state-cancelled p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.0676923px;
+  color: #eb5757;
+  margin: 0;
+  font-family: "Montserrat";
+}
+.task-state-cancelled {
+  background: rgba(235, 87, 87, 0.2);
+  border-radius: 8.5px;
+  padding: 1px 17px 1px 17px;
+  margin-right: 50px;
+}
