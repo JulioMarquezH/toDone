@@ -8,7 +8,15 @@ import Ellipse3 from "../../../img/Ellipse3.png";
 import user5 from "../../../img/user5.png";
 import point3 from "../../../img/piont3.png";
 
-function Task({ nameTask, status, priority, isLine, asignates }) {
+function Task({
+  nameTask,
+  status,
+  priority,
+  isLine,
+  asignates,
+  handleShowGoal,
+  isUser,
+}) {
   const isPending = status === "Pending";
   const isInProgress = status === "In Progress";
   const isCompletd = status === "Completd";
@@ -19,13 +27,17 @@ function Task({ nameTask, status, priority, isLine, asignates }) {
 
   return (
     <>
-      <address className="task">
-        <div className="flex">
+      <li className="task">
+        <div className="task-title">
           <img src={piont} alt="" className="point" />
-          <p className="task-type task-p">{nameTask}</p>
+          <p onClick={handleShowGoal} className="task-type task-p">
+            {nameTask}
+          </p>
         </div>
-        <div className="flex">
+        <div className="task-indicators">
           <section
+            aria-label={status}
+            data-balloon-pos="left"
             className={clsx(
               isPending && "task-state-Pending",
               isInProgress && "task-state-InPending",
@@ -35,7 +47,11 @@ function Task({ nameTask, status, priority, isLine, asignates }) {
           >
             <p>{status}</p>
           </section>
-          <section className="task-flex">
+          <section
+            aria-label={priority}
+            data-balloon-pos="up"
+            className="task-flex"
+          >
             <img src={Ellipse1} alt="" className={clsx(isMinor && "isNone")} />
             <img src={Ellipse2} alt="" className={clsx(isNormal && "isNone")} />
             <img
@@ -46,13 +62,15 @@ function Task({ nameTask, status, priority, isLine, asignates }) {
             <p className="minor task-p">{priority}</p>
           </section>
         </div>
-        <div className="flex">
-          <section>
-            <img src={user5} alt="" className="users" />
-          </section>
+        <div className="task-responsibles">
+          {isUser && (
+            <section>
+              <img src={user5} alt="" className="users" />
+            </section>
+          )}
           <img src={point3} alt="" className="task-img" />
         </div>
-      </address>
+      </li>
       <hr className={clsx("line", isLine && "isNone")} />
     </>
   );

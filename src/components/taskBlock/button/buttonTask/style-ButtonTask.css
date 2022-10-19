@@ -1,0 +1,37 @@
+.add-task {
+  background-color: #884cb2;
+  height: 100%;
+  padding: 8px 20px 8px 20px;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 9px;
+  margin-left: 23px;
+}
+
+.add-task img {
+  margin-right: 5px;
+}
+.add-task.button-on {
+  display: none;
+}
+.add-task img {
+  margin-right: 5px;
+}
+.add-task.button-on {
+  padding: 10px 5px 10px 10px;
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .add-task.button-on {
+    display: block;
+  }
+  .add-task {
+    display: none;
+  }
+}

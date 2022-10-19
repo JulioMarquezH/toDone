@@ -6,6 +6,7 @@ button {
   line-height: normal;
   overflow: visible;
   padding: 0;
+  cursor: pointer;
 }
 @media screen and (min-width: 1400px) {
   body {
@@ -29,4 +30,41 @@ button {
 }
 .contents {
   display: flex;
+}
+@media screen and (max-width: 1300px) {
+  .contents {
+    display: block;
+  }
+}
+@media screen and (max-width: 530px) {
+  .contents main {
+    width: 80vw;
+    margin: auto;
+  }
+}
+p {
+  margin: 0;
+}
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+select {
+  background: transparent;
+  border: none;
 }

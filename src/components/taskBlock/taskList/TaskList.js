@@ -54,16 +54,16 @@ const nameTask = [
   },
 ];
 let numberItem;
-function taskList() {
+function taskList({ handleShowGoal, isUser }) {
   numberItem = nameTask.length - 1;
   return (
-    <>
+    <ul className="list-task">
       {nameTask.map((item, index) => {
         const isLine = numberItem === index;
-        const props = { ...item, isLine };
-        return <Task key={index} {...props} />;
+        const props = { ...item, isLine, isUser };
+        return <Task handleShowGoal={handleShowGoal} key={index} {...props} />;
       })}
-    </>
+    </ul>
   );
 }
 

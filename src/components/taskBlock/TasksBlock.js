@@ -4,9 +4,12 @@ import point from "../../img/piont.png";
 import Ellipse1 from "../../img/Ellipse1.png";
 import TaskList from "./taskList/TaskList";
 import "./style-TaskBlock.css";
+import ButtonProject from "./button/buttonProject/ButtonProject";
+import ButtonTask from "./button/buttonTask/ButtonTask";
 import TaskListCompletd from "./taskListCompletd/TaskListCompletd";
+//import ModalProject from "../modal/ModalProject";
 
-function TaskBlock() {
+function TaskBlock({ handleAddTask, handleAddProject, handleShowGoal }) {
   return (
     <main>
       <section className="title">
@@ -15,23 +18,26 @@ function TaskBlock() {
           <strong className="title-color"> 7 task</strong>
           today
         </h1>
-        <button className="add-task">
-          <img src={group} alt="" /> Add New
-        </button>
-        <button className="add-task button-on">
-          <img src={group} alt="" />
-        </button>
+        <ButtonTask handleAddTask={handleAddTask} />
+        <ButtonProject handleAddProject={handleAddProject} />
       </section>
-      <div className="tasks">
+      <div className="tasks block">
         <p className="on-hold">On Hold</p>
-        <TaskList />
-        <div className="flex completed">
+        <TaskList handleShowGoal={handleShowGoal} />
+        <div className="tag completed">
           <p className="completed-text">Completed</p>
           <section className="inactive">
             <p>inactive</p>
           </section>
         </div>
-        <TaskListCompletd />
+        <TaskList handleShowGoal={handleShowGoal} isUser />
+        <div className="tag completed">
+          <p className="completed-text">Completed</p>
+          <section className="inactive">
+            <p>inactive</p>
+          </section>
+        </div>
+        <TaskListCompletd isUser />
       </div>
     </main>
   );

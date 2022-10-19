@@ -54,7 +54,20 @@
   margin-left: 83px;
   justify-content: space-between;
 }
-.flex {
+.task-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.task-indicators {
+  display: flex;
+  align-items: center;
+}
+.task-responsibles {
+  display: flex;
+  align-items: center;
+}
+.tag {
   display: flex;
   align-items: center;
 }
@@ -114,4 +127,79 @@
   border-radius: 8.5px;
   padding: 1px 17px 1px 17px;
   margin-right: 50px;
+}
+@media screen and (max-width: 1050px) {
+  .users,
+  .users1,
+  .users2,
+  .users3 {
+    display: none;
+  }
+  .task-img {
+    display: none;
+  }
+  .tasks {
+    width: 632px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .task-state-Pending p,
+  .task-state-InPending p,
+  .task-state-completed p,
+  .task-state-cancelled p {
+    display: none;
+    height: 10px;
+  }
+  .minor,
+  .critical,
+  .normal {
+    display: none;
+  }
+  .task-state-Pending,
+  .task-state-InPending,
+  .task-state-completed,
+  .task-state-cancelled {
+    height: 10px;
+    width: 10px;
+    padding: 0;
+    opacity: none;
+    margin-right: 20px;
+  }
+  .tasks {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .task-type {
+    width: 280px;
+  }
+  .tasks {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .task {
+    margin: auto;
+    justify-content: left;
+  }
+  .line {
+    margin: 0;
+    width: 335px;
+  }
+  .tasks {
+    width: 100%;
+  }
+  p.completed-text {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .task-type {
+    width: 200px;
+  }
+  .line {
+    margin: 0;
+    width: 255px;
+  }
 }

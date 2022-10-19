@@ -43,13 +43,13 @@ const nameTaskCompletd = [
   },
 ];
 let numberItem;
-function taskListCompletd() {
+function taskListCompletd({ isUser }) {
   numberItem = nameTaskCompletd.length - 1;
   return (
     <div className="opacity">
       {nameTaskCompletd.map((item, index) => {
         const isLine = numberItem === index;
-        const props = { ...item, isLine };
+        const props = { ...item, isLine, isUser };
         return <Task key={index} {...props} />;
       })}
     </div>

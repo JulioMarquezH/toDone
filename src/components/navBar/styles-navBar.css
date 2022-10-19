@@ -30,4 +30,17 @@
   .navbar-alert {
     display: none;
   }
+  .navbar {
+    display: flex;
+    margin: auto;
+    width: 360px;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar-user {
+    display: none;
+  }
 }
