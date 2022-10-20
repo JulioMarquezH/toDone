@@ -6,7 +6,7 @@ function GoalComment() {
     <div class="box-modal-description">
       <section class="content-modal">
         <p class="descrition-modal">
-          Goal <strong class="project-modal">Comment</strong>
+          Description <strong class="project-modal">Comment</strong>
         </p>
         <div class="content">
           <textarea
