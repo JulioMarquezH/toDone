@@ -6,7 +6,7 @@ import piont3 from "../../../img/piont3.png";
 import clsx from "clsx";
 import Task from "../task/Task";
 import "./style-TaskList.css";
-
+import useTasks from "../../../services/useTasks";
 const nameTask = [
   {
     nameTask: "Evaluate the addition and deletion of user IDs.",
@@ -54,7 +54,11 @@ const nameTask = [
   },
 ];
 let numberItem;
-function taskList({ handleShowGoal, isUser }) {
+function TaskList({ handleShowGoal, isUser }) {
+  const { data, isError, isLoading } = useTasks();
+  if (isError) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+  console.log(data);
   numberItem = nameTask.length - 1;
   return (
     <ul className="list-task">
@@ -67,7 +71,7 @@ function taskList({ handleShowGoal, isUser }) {
   );
 }
 
-export default taskList;
+export default TaskList;
 
 /*
 
