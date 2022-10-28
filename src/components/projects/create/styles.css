@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background: linear-gradient(115.67deg, #edc1d3 7.14%, #91bdec 99.42%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-modal {
+  text-align: center;
+}
+.box-modal {
+  width: 500px;
+
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.creacte-modal {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 23px;
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
+.project-modal {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #133f9e;
+}
+.title-task {
+  width: 342px;
+  height: 31px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+.description-task {
+  width: 342px;
+  height: 97px;
+  margin-top: 18px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+.option-modal {
+  width: 342px;
+  height: 31px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+.save-project {
+  width: 120px;
+  height: 34px;
+  color: white;
+  background: #133f9e;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
